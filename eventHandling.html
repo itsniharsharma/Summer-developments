@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <!-- <button onmouseover="alert('you pressed trigger button')">Trigger</button> -->
+      
+    <input type="text" id="myText">
+
+    <!-- <script>
+        const element=document.getElementById('myText')
+        element.addEventListener('change',(event)=>{
+            console.log(element.value)
+        })
+    </script> -->
+
+
+    <script>
+        let consolePrint=document.getElementById("myText"); //accessed
+        consolePrint.addEventListener('change',()=>{
+            console.log(consolePrint.value);
+        })
+    </script>
+
+
+</body>
+</html>

@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- <select id="controldiv">                     // dropdown
+        <option value="1">show</option>
+        <option value="0">hide</option>
+    </select> --> 
+
+     <button type="button" id="controldiv">Click Me</button>
+
+    <div id="slavediv">I'm the element</div>
+
+    <script src="vendor/jQuery/jQuery.js"></script>
+
+     <script type="text/javascript">
+
+
+        // $('#controldiv').change(function(){            //if incase of dropdown
+        //     if ($('#controldiv').val() == '1') {
+        //         $('#slavediv').slideDown();
+        //     } else {
+        //         $('#slavediv').slideUp();
+        //     }
+        // });
+
+        
+        $('#controldiv').click(function(){            //if incase of button
+            $('#slavediv').slideToggle();
+        });
+        
+
+     </script>
+</body>
+</html>

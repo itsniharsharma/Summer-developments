@@ -1,0 +1,162 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .box{
+            height:100px;
+            width: 100px;
+            border: 2px solid black;
+            margin: 21px;
+            text-align: center;
+            background-color: rgb(161, 239, 239);
+        }
+
+        .box1{
+            height: 169px;
+            width: 100px;
+            background-color: blueviolet;
+            color: white;
+            border: 2px solid black;
+        }
+
+        #boxx2{
+           margin: 20px;
+        }
+
+        #boxx3{
+            margin: 20px;
+        }
+
+        #boxx4{
+            margin: 20px;
+        }
+
+    </style>
+</head>
+<body>
+    <!-- question: create 3 divs with commmon name box access them 
+    and add some unique text to each of them -->
+
+    <!-- <div class="box">First div</div>
+    <div class="box">Second div</div>
+    <div class="box">Third div</div> -->
+
+
+    <div class="box1" name="JSDiv">
+        this is a div
+        <ul>
+            List
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+        <!-- if wanna have button here the append -->
+    </div>
+    <!-- if wanna button here then after -->
+
+
+    <div class="box1" id="boxx2">
+        this is div 2
+        <ul>
+            List
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+
+
+    <div class="box1" id="boxx3">
+        this is div 2
+        <ul>
+            List
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+
+
+        
+    <div class="box1" id="boxx4">
+        this is div 2
+        <ul>
+            List
+            <li>item1</li>
+            <li>item2</li>
+            <li>item3</li>
+        </ul>
+    </div>
+
+
+    <script>
+        // let targetDivs=document.querySelectorAll(".box");
+        // console.log(targetDivs);
+
+        // let idx=1;
+        // for(const ele of targetDivs){
+        //     ele.innerText=`new unique value ${idx}`;
+        //     idx++;
+        // }
+
+        // targetDivs[0].innerText="new unique value 1";
+        // targetDivs[1].innerText="new unique value 2";
+        // targetDivs[2].innerText="new unique value 3";
+
+        //---------------------------------------------------------------------
+        
+        // let div=document.querySelector("div")  //Access
+
+        // div.style.backgroundColor="green"     //Change
+        // div.style.backgroundColor="orange"
+        // div.innerText="Hello"
+
+        // div.style.visibility="Hidden"
+
+        //add-------|
+
+        //to add an element firstly create it, then add it
+        //say we have to create a new button
+
+        let newBtn0= document.createElement("button");
+        newBtn0.innerText="click me";
+        console.dir(newBtn0);
+
+        let newBtn1= document.createElement("button");
+        newBtn1.innerText="click me";
+        console.dir(newBtn1);
+
+        let newBtn2= document.createElement("button");
+        newBtn2.innerText="click me";
+        console.dir(newBtn2);
+
+        let newBtn3= document.createElement("button");
+        newBtn3.innerText="click me";
+        console.dir(newBtn3);
+
+        //we created a button, now we have to add it in DOM
+        //we can do it in 4 ways
+
+        //node.append(el)- add at the end of node(inside)
+        //node.prepend(el)- add at the start of node(inside)
+        //node.before(el)-add before the node(outside)
+        //node.after(el)-add after the node(outside)
+
+        let newEl0=document.querySelector("div");
+        newEl0.append(newBtn0);
+
+        let newEl1=document.querySelector("#boxx2");
+        newEl1.prepend(newBtn1);
+
+        let newEl2=document.querySelector("#boxx3");
+        newEl2.before(newBtn2);
+
+        let newEl3=document.querySelector("#boxx4");
+        newEl3.after(newBtn3);
+    </script>
+</body>
+</html>

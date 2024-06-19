@@ -1,0 +1,13 @@
+Daily Markups
+
+I got a point, revision is the key, and nothing could be remembered by just writing
+It's not like JEE and all, I have to perform the tasks practically.
+The revision schedule must be 2H, It only has a complete revision of topics done yesterday.
+
+/--------------------
+6th June 2024
+
+- CSS Fonts, text floats
+- CSS flexbox, making Web Responsive
+- Getting a div in a div, mark display as flex, all inner div align in rows
+- justify content: Center, etc then flex-wrap: wrap; //responsive website.

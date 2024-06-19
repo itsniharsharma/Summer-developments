@@ -1,0 +1,94 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+
+    <script>
+        const menu=["a","b","c"];
+        const cars=new Array("a","b","c");
+
+        console.log(menu)
+        console.log(cars)
+
+        menu.sort();
+        cars.sort();
+
+        console.log(menu)
+        console.log(cars)
+
+
+        menu.push("f")
+        console.log(menu)
+
+        menu.pop();           //this pops up last elemnt and remove it
+        console.log(menu)
+
+        const isAnArray1=[1,2,3];
+        const isAnArray2=new Array(4,5,6);
+        console.log(Array.isArray(isAnArray2));
+
+        myArray= [1,2,3];
+        myArrayOfObject=[
+            {
+                name:"Nihar",
+                age: "18",
+                cource: "Btech"
+            },
+
+            {
+                name:"Karan",
+                age: "19",
+                cource: "Mtech"
+            }
+        ]
+
+        console.log(myArrayOfObject)
+
+        let myNewArray=[
+               {
+                name:"Joe",
+                age: "19",
+                cource:"Mtech"
+               }
+        ]
+
+        myArrayOfObject.push(myNewArray)
+        console.log(myArrayOfObject)
+
+
+        let coffeeCup={
+            colour:"White",
+            size:"m",
+            price:"1000",
+            printWhatYouDo: function(){                         //such a fun is called a method
+                console.log("i either have tea or coffee")  
+            }
+        }
+
+        console.log("size of cup is:"+coffeeCup.size);
+        console.log("colour of cup is:"+coffeeCup.colour);
+
+        if(coffeeCup['colour']){
+            console.log("it have some colour")
+        }
+
+        coffeeCup.printWhatYouDo()
+
+
+        //what i understood, obects are collection of Key-value pairs
+        //object could be of both dot and array notation
+
+        
+
+    </script>
+
+
+
+</body>
+</html>

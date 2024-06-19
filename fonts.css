@@ -1,0 +1,15 @@
+.allfonts{
+    font-family: "Roboto", sans-serif;
+}
+
+#div1 #hadder-text{
+    color: rgb(233, 81, 81);
+    text-align: center;
+    text-decoration: overline;
+    text-decoration-color: black;
+    opacity: 500;
+}
+
+#div1{
+    background-color: rgb(107, 107, 107);
+}

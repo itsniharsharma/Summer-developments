@@ -1,0 +1,81 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <p></p>
+    <div id="first_id"></div>
+    <div class="first_class"></div>
+    <button type="button">Click Me</button>
+
+
+    
+     <select id="controldiv">
+        <option value="1">show</option>
+        <option value="0">hide</option>
+     </select>
+
+    <Div id="slavediv"> I'm the element </Div>
+
+    <script src="vendor/jQuery/jQuery.js"></script>  
+
+
+
+
+
+
+    <!-- to write something in jquery: -->
+    <script type="text/javascript">
+
+     $("p").text("hellow");    //basic syntax of jQuerys
+     $('#first_id').text("inserted in first para");
+     $('.first_class').text("inserted in first class");
+
+    //  $('button').click(function(){   //this is how to use jQuery
+    //       alert("button is clicked");
+    //  });
+
+
+
+    // $('button').mouseenter(function(){
+    //     alert("mouse on click button");
+    // })
+
+
+    // $('#controldiv').change(function(){
+    //      if($('#controldiv').val()==1){
+    //         $('#slavediv').show();
+    //      } else{
+    //         $('#slavediv').hide();
+    //      }
+    // })
+
+
+    $('#controldiv').change(function(){
+         if($('#controldiv').val()==1){
+            $('#slavediv').fadeIn();
+         } else{
+            $('#slavediv').fadeOut();
+         }
+    })
+
+    </script>
+
+
+
+
+
+
+
+
+    <script>
+        //  .click()
+        //  .mouseenter()
+    </script>
+
+</body>
+</html>

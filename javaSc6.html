@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .newClass{
+        background-color: green;
+    }
+
+    .content{
+        color: red;
+    }
+    </style>
+</head>
+<body>
+    
+    <!-- <div class="myButton">I have a Button</div> -->
+
+    <p class="content">I am a Paragraph.</p>
+
+    <script>
+       let newEl0=document.createElement("button");
+
+       newEl0.innerText="click me";
+       newEl0.style.color="white";
+       newEl0.style.backgroundColor="red";
+
+
+       //since we need element button in starting of body , inside it
+
+       document.querySelector("body").prepend(newEl0);
+
+
+       //now we have to access that paragraph
+       let para=document.querySelector("p");
+       //we accesed para, we have to targ class
+       //class is an attribute of para
+
+       console.log(para.getAttribute("class"));
+       //to change class name
+
+    //    console.log(para.setAttribute("class","newClass")); //completely overwrite properties of prev class
+       //toggle the above, see the change
+
+       //by doing this, element para with attribute class:content
+       //changes its class to : newClass
+       //para inharite all properties of .newClass
+       //by this styling of old class is also removed!
+
+       //say, we dont want this, that styl of previos is removed!
+       // To fix this, we use linkedClass
+
+       
+
+    </script>
+</body>
+</html>

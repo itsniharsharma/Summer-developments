@@ -1,0 +1,73 @@
+<!-- change in the state of object is event -->
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+
+    <!-- just search events JS then mozzila website then refrences -->
+     <button onclick="alert('you clicked me')">Button1</button>
+     <!-- this is inline eventHandling, its not preffered! either do this -->
+
+      <button id="btn2">Button2</button>
+      <button id="btn3">Butten3</button>
+      <button id="btn4">Button4</button>
+
+
+
+
+    <!-- //----------------------------------------------------------- -->
+    <script>
+
+        let btn2=document.querySelector("#btn2");  //accessed my button by queryselector
+        btn2.onclick=()=>{
+            alert("you clicked me hahaha");
+        }
+
+        //JS event handeling >> inline eventHand 
+        //there is smthn called event object, like: 
+        
+        let btn3=document.querySelector("#btn3");
+        btn3.onclick=(evt)=>{
+            //these all are handlers
+            console.log(evt);
+            console.log(evt.type)
+            console.log(evt.target)
+            console.log(evt.clientX, evt.clientY);
+        }
+
+        //EventListners 
+        //they are fun keep listning, wait for event to occur
+        //once event happens, it execute callback fun
+        // node.addEventListener(event, callback) is its syntax
+        // callback is a handler in it
+
+        // btn4.addEventListener("click", ()=>{
+        //     console.log("button4 is clicked");
+        // })
+
+        //if i have to delete an eventListener
+        //firstly store callback fun in another variable
+
+        let handler4=()=>{
+            console.log("button4 is clicked"); 
+        }
+
+        //then edit eventListener like
+
+        btn4.addEventListener("click",handler4);
+        //now to remove it
+        btn4.removeEventListener("click",handler4);
+
+        //Its interesting, we need to create seprate name for callback fun, caus 
+        //both del and add fun are created sepratedly in memory
+    
+    </script>
+    <!-- //------------------------------------------------------------------ -->
+</body>
+</html>
+

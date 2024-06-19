@@ -1,0 +1,254 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <title>Forms</title>
+    <style>
+        @media only screen and (min-width: 0px) and (max-width: 400px){
+            body{
+                background-image: url('new.png');
+            }
+        }
+
+        @media only screen and (min-width: 401px) and (max-width: 900px){
+            body{
+                background-image: url('wp8930684.png');
+            }
+        }
+
+        @media only screen and (min-width: 901px){
+            body{
+                background-image: url('new.png');
+            }
+        }
+        
+        body{
+            font-family: "Roboto", sans-serif;
+            font-weight: 400;
+            font-style: normal;
+            /* background-image: url('new.png'); */
+            background-repeat: no-repeat;
+            background-size: cover;
+        
+        }
+
+        #overalldiv{
+            /* border: 2px solid red; */
+            /* padding: 2px; */
+            /* display: flex; */
+            /* justify-content: center;
+            align-items: center; */
+            /* border: 2px solid red; */
+            padding-left: 287px;
+            margin-top: 10px;
+        }
+
+        #cont0{
+            /* border: 2px solid black; */
+            display: flex;
+            /* flex-direction: column;
+            align-items: center; */
+            padding: 12px;
+            justify-content: center; 
+        }
+
+        #cont1{
+            /* border: 2px solid blue; */
+            display: flex;
+            flex-direction: row;
+            padding: 10px;
+            /* margin: 10px; */
+
+        }
+
+        #name{
+            /* border: 2px solid rgb(255, 111, 0); */
+            padding-right: 54px;
+            padding-left: 20px;
+        }
+
+        #myname{
+            border-radius: 12px;
+            margin-left: 16px;
+            /* border: 2px solid black; */
+        }
+
+        #roll{
+            /* border: 2px solid rgb(2, 255, 56); */
+            padding-left: 55px;
+        }
+
+        #class label{
+            margin-left: 10px;
+        }
+
+        #myroll{
+            border-radius: 12px;
+            margin-left: 60px;
+        }
+        
+        #cont2{
+            /* border: 2px solid black; */
+            display: flex;
+            flex-direction: row;
+        }
+
+        #addr{
+            /* border: 2px solid red; */
+            display: flex;
+            align-items: center;
+        }
+
+        #addr label{
+            margin-right: 8px;
+            margin-left: 29px;
+            /* border: 2px solid red; */
+        }
+
+        #class{
+           /* border: 2px solid orchid; */
+           display: flex;
+           justify-content: center;
+           padding: 11px;
+           margin-left: 93px;
+        }
+
+        #userclass{
+            /* border: 2px solid brown; */
+            margin-left: 14px;
+        }
+
+        #useraddre{
+            border-radius: 12px;
+            margin-left: 2px;
+        }
+
+        #cont3{
+            display: flex;
+            /* border: 2px solid yellow; */
+            padding: 21px;
+        }
+
+        #passkey{
+            margin-left: 107px;
+        }
+
+        #pass{
+            border-radius: 9px;
+            margin-left: 20px;
+        }
+
+        #email{
+            /* border-radius: 9px */
+            margin-left: 9px;
+        }
+
+        #emailbox{
+            border-radius: 9px;
+            margin-left: 19px;
+        }
+
+        #cont4{
+            /* border: 2px solid blue; */
+            display: flex;
+            padding: 25px;
+        }
+
+        #subm-1{
+            margin-left: 3px;
+            border-radius: 9px;
+        }
+
+        #rest1{
+            margin-left: 33px;
+            border-radius: 9px;
+        }
+
+        #newcont{
+            /* border: 2px solid blue; */
+        }
+
+        #usersel{
+            margin-left: 27px;
+        }
+
+    </style>
+</head>
+<body>
+    <form action="backend.php">
+        <div id="cont0">
+            <h1>Submition Form</h1>
+        </div>
+
+
+        <div id="overalldiv">
+        <div id="cont1">
+            <div id="name">
+                <label>Name</label>
+                <input type="text" placeholder="Enter your name" id="myname">
+            </div>
+    
+            <div id="roll">
+                <label>Roll</label>
+                <input type="text" placeholder="Enter your Roll" id="myroll">
+            </div>
+        </div> 
+
+         <div id="cont2">
+            <span id="addr">
+                <label for="">Address</label>
+                 <textarea name="text" id="useraddre" placeholder="Enter addrss"></textarea>
+            </span>
+
+            <span id="class">
+                <label>Class</label>
+                <div id="userclass">
+                    8th<input type="radio" name="chkb" id="chkb-1">
+                    9th <input type="radio" name="chkb" id="chkb-2">
+                    10th <input type="radio" name="chkb" id="chkb-3">
+                    11th <input type="radio" name="chkb" id="chkb-4">
+                    12th <input type="radio" name="chkb" id="chkb-5">
+                </div>
+            </span>
+         </div>
+
+
+         <div id="cont3">
+            <div id="email">
+               Email <input type="email" name="useremail" id="emailbox">
+            </div>
+
+            <div id="passkey">
+                Password <input type="password" name="userpass" id="pass">
+            </div>
+         </div>
+
+         <div id="newcont">
+             <select id="usersel"> 
+                <option value="0">Stream</option>
+                <option value="1">Non-Medical</option>
+                <option value="2">Medical</option>
+                <option value="3">Commerce</option>
+                <option value="4">Arts</option>
+             </select>
+         </div>
+
+         <div id="cont4">
+            <div id="submit">
+                <input type="submit" id="subm-1">
+            </div>
+
+            <div id="reset">
+                <input type="reset" id="rest1">
+            </div>
+         </div>
+        </div>
+    </form>
+</body>
+</html>
+
+<!-- like i changed background images while responsive in action, but how can i change text color in white while for black bg photo? -->

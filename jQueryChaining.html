@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="controldiv">Click Me</button>
+
+    <!-- <div id="animationdiv" style="background-color: blue; height: 50px; width: 50px;"></div> -->
+
+    <div id="animationdiv" style="background-color: blue; height: 50px; width: 50px;  display: none;"></div>
+
+
+    <script src="vendor/jQuery/jQuery.js"></script>
+
+    <script type="text/javascript">
+
+        //    $("#controldiv").click(function(){
+        //         $("#animationdiv").css("background-color", "red").fadeOut(2000);
+        //    })
+
+        $("#controldiv").click(function(){
+                $("#animationdiv").fadeIn(2000).css("background-color", "red").fadeOut(2000);
+           })   
+    </script>
+</body>
+</html>

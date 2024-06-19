@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(255, 190, 106);
+        }
+       #h1{
+          text-align: center;
+          color: rgb(31, 9, 199);
+       } 
+
+       #but1{
+           border: 11px solid rgb(111,111,118);
+           color: rgb(255, 255, 255);
+           background-color: rgb(111, 111, 118);
+           border-radius: 12px;
+       }
+    </style>
+</head>
+<body>
+     
+    <h1 id="h1">Headding</h1>
+    <button id="but1" onclick="alert('Thanks for clicking')">click Me</button>
+
+    <h1 class="newHed"> Heelo</h1>
+    <h2 class="newHed"></h2>
+    <p> Hello again</p>
+    <p>Hello againn</p>
+
+
+
+
+     <div id="dev1">
+        <h1>I am a children </h1>
+        <h2 id="quesId">Hello JavaScript</h2>
+        <div>
+            I am a childeren div
+        </div>
+
+        <p>
+            I am a children para, excess both of us by .children
+        </p>
+     </div>
+
+
+
+     <div id="secondDiv">
+        <h3>Fruits</h3>
+        <ul>
+            <li>Banana</li>
+            <li>Lichi</li>
+            <li>Orange</li>
+         </ul>
+     </div>
+
+
+
+    
+
+
+
+
+
+
+
+
+
+
+
+
+    <script>
+
+
+   // a window obj is an obj of browser, created by it
+   // Its a globel obj with lots of prop and methods
+   //window objects are global and need not to be written with window. extention
+
+   console.log("hello");
+   window.console.log("hello");
+
+   //one and the same things
+   // All of the code written by us is stored in window obj
+   //There is a document file in window
+   //We can excess HTML there with JS
+   // Document file in window represent DOM
+   // Documnt Object Model
+   // Treelike structure, every element in it is called node
+   // win->document->html->body->div etc
+   //                 |
+   //                head->meta,titel,link etc
+    
+    
+   //console.log print value of elements as it is
+   //cosol.dir print elements used
+
+   //just see the difference:
+
+   console.dir(document.body)  //all the tags, classes, divs used, there name printed
+   console.log(document.body)
+
+
+   //we can change xyz in our website dynamically at runtime with JS 
+   // EXAMPLE: change color to green
+
+   document.body.style.background="skyblue";
+
+   //accessed docu file in windoe then accessed body then styl then changed bg
+   //This is changes i did in DOM document obj modal
+
+     let headings=document.getElementsByClassName("newHed");
+     console.dir(headings);
+     console.log(headings);
+
+     //we can get elements by 3 ways, id, class and by tag
+
+    //  document.getElementById();
+    //  document.getElementsByClassName();
+    //  docuument.getElementsByTagName();
+
+     //better than above is .querySelector
+     //By its own it identify whats needed, like
+     //Can enter any of id, class or tag, it will gather all with every info about it
+
+     let allEl=document.querySelectorAll(".newHed"); //first element
+     console.dir(allEl);
+
+     //querySelector will return NodeList
+
+     // In a DOM there are three nodes
+     // Text Nodes   Comment   Elements
+     //We only work on elements
+
+     // Remembar Parent, children and sibling
+
+     // to access children elements as decribed div in HTML
+
+     console.log(document.querySelectorAll("div"))
+     //h1 div and p are three children of parent div!
+
+     //now come to fruits part, lets excess this div
+      
+     let div2=document.querySelector("#secondDiv");
+     console.dir(div2);
+
+
+     //btw we are studying properties of DOM:
+
+     //tagName
+     //innerText
+     //innerHTML
+     //textContent: use to show hidden text if visibility: hidden
+
+     let getHeading=document.querySelector("h1");
+     console.dir(getHeading);
+
+
+     //practice ques:
+
+     let append=document.querySelector("#quesId");
+     console.dir(append.innerText);
+     append=append.innerText+"From Nihar";
+
+   
+
+    </script>
+</body>
+</html>

@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+    <button id="controldiv">Click Me</button>
+    <button id="controldivStop">Click Me</button>
+
+    <div id="animationdiv" style="background-color: blue; height: 50px; width: 50px;"></div>
+
+
+    <script src="vendor/jQuery/jQuery.js"></script>
+
+    <script type="text/javascript">
+           $('#controldiv').click(function(){
+                $('#animationdiv').animate({       //this is a growth animation! 
+                    height:'250px',
+                    width: '250px'
+                },5000)                            //5000ms is the timespan of animation .animate((fun),timespan)
+           })
+
+
+           //for jQuery Stop animation: 
+
+           $('#controldivStop').click(function(){
+                $('#animationdiv').stop()   
+           })
+    </script>
+</body>
+</html>

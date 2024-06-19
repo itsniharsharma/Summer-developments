@@ -1,0 +1,282 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    
+
+    <script>
+
+    
+//     let items=[250,600,500,670,400]
+
+//     let idx=0;
+//    for(let val of items){
+//       console.log(`value at index ${idx}=${val}`);
+//       let offer=val/10;
+//       items[idx]=items[idx]-offer;
+//       console.log(`value after offer is ${items[idx]}`);
+//       idx++;
+//    }
+
+
+    //   let items=[600,700,560,430,780]
+
+    //   let i=0;
+    //   for(let val of items){
+    //      console.log(`before offer ${i}=${val}`);
+    //      let offer=val/10;
+    //      items[i]=items[i]-offer;
+    //      console.log(`after offer ${i}=${items[i]}`);
+    //      i++;
+    //   }
+
+
+
+    //Arrays in Js have methods
+    //push() pop() toString()
+    //Concat() unshift() shift()
+    //slice() splice()
+
+    //push() add element at end of array
+    //pop() will delete end element
+    //toString converts array tO string
+    //Concat join multiple arrays
+    // unshift add element in starting
+    //shift delete element from starting
+    //slice() will take a particular part (startidx,endingidx)
+    //splice(startidx,delete Count,newElement)
+
+
+
+    // let foodItems=["Lichi","Banana", "Apple", "Chips", "Tomato"]
+
+    // console.log(foodItems);
+    // let deleteItem= foodItems.pop();
+    // console.log(foodItems);
+    // console.log('deleted',deleteItem);
+    // console.log(foodItems.toString());
+
+
+
+    let trees=["spine", "ashoka"];
+    let color=["blue","green","yellow"];
+    
+    let mixture=trees.concat(color);
+    console.log(mixture);
+    console.log(color.slice(0,2))
+
+    let array=[1,2,3,4,5,5,67,8]
+    console.log(array.splice(1,2,60,60))
+
+    //adding element using splice
+
+    console.log(array.splice(2,0,90))
+
+    //deleting element using splice
+
+    console.log(array.splice(2,1)) //deleted 90
+
+    //oprations using splice are
+    /*
+      - delete various element
+      - add elements
+      - replace elemnts
+      - Instering elemnts
+    */
+
+    //making function using arrowmethod
+
+    const arrowSum=(a,b)=>{
+         console.log(a+b);
+    }
+
+
+    //make a fun input string outpot vowels
+
+    function countVowels(str){
+        let count=0;
+        for(let char of str){
+           if(char=="a" || char=="e" ||char== "i" ||char== "o" ||char== "u"){
+              count++;
+           }
+        }
+        console.log(count)
+    }
+
+    //making an arrow function for same 
+
+    //  const countVow=(str)=>{
+    //     let count=0;
+    //     for(let char of str){
+    //        if(char=="a" || char=="e" ||char== "i" ||char== "o" ||char== "u"){
+    //           count++;
+    //        }
+    //     }
+    //     console.log(count)
+    //  }
+
+    /*A function associated with a perticular obj
+    becomes a Method. ex .toUpperCase is only associated with
+    Strings, hence its a method*/ 
+    
+
+    // interestingly, we can use functions as parameters in JS
+
+    function abc(){
+        console.log("hello")
+    }
+
+    function myFun(abc){
+        return abc;
+    }
+
+    //in this case, abc() is called as callbackFunction
+    // .forEach is a method and is a loop for arrays in JS
+
+    let arr=[1,2,3,4,5,6];
+    arr.forEach(function printVal(val){
+        console.log(val);
+    })
+
+    //arr.forEach autom execute inner func
+    //rather making it normal fun, make it arrow
+
+    let cities=["delhi","mumbai","pune"]
+    cities.forEach((val)=>{
+        console.log(val.toUpperCase())
+    })
+
+
+
+
+
+
+    //modifying it with index value :
+
+    
+    let places=["delhi","mumbai","pune"]
+    places.forEach((val,idx)=>{
+        console.log(val.toUpperCase(),idx)
+    })
+
+    //generally we can use 3 param: .forEach(val,idx,arr);
+
+    //forEach is a method only for arrays not for strings
+    //Array could be of strings
+
+    //HOF/HOM heigher order fun or methods
+    //are fun/meth that take another fun as a parameter/return it
+    //ex .forEach loop
+    //fun to be passed as a pram is callBackfunction
+
+
+    //printing sq of each element
+
+    let newArr=[2,3,4,5,6];
+
+    newArr.forEach((val)=>{
+        console.log(val*val);
+    })
+
+    //-----------------------------| another way
+
+    let calcSq=(val)=>{
+        console.log(val*val);
+    }
+
+    newArr.forEach(calcSq);
+                                    
+    //------------------------------|
+
+
+    //Some other methods for Arrays:
+    //map, filter, Reduce - all are selfiteravive in nature 
+
+
+    //map is like .forEach, jut it return a new Array
+    //value returned from map() will be stored in new array
+
+
+    // let nums=[3,4,5];  //original array
+
+    // let newArray=nums.map((val)=>{
+    //     console.log(val*2)
+    // })
+
+
+
+
+
+
+
+
+    //Filter, seprates elemts from array based on condition
+    // condition true elem strored in new array
+
+    let nums=[1,2,3,4,5,6,7];
+
+    let evenArray= nums.filter((val)=>{
+        return val%2==0;
+    })
+    
+    console.log(evenArray)
+
+    //.filter sep elemets from nums, strored it in evenArray
+
+
+
+
+
+
+
+
+    //Reduce do like : 1, 1+2=3, 3+3=6, 6+4=10
+
+    let array1=[1,2,3,4];
+    const answerArray=array1.reduce((prev,next)=>{
+        return prev+next;
+    })
+
+    console.log(answerArray)
+
+    //code to find largest among all
+
+    let array2=[1,2,3,4];
+    const solArray=array1.reduce((prev,next)=>{
+        return next > prev ? next : prev;
+    })
+
+    console.log(solArray)
+
+
+
+
+
+
+
+
+
+    //Enter a number from user and print arr from 1 to n
+
+    let n=prompt("enetr a number");
+
+    let array3=[];
+
+    for(let i=1;i<=n;i++){
+        array3[i-1]=i; //1(0), 2(1),.....
+    }
+
+    console.log(array3);
+
+
+
+           
+
+    </script>
+
+</body>
+</html>

@@ -51,3 +51,8 @@ with a project in MERN, JS, etc.
 draw tree diagram for stone paper scissor as a dry diagram.
 
 /----------------------
+20th June 2024
+
+- Complete Bootstrap
+- Revising previous
+- Researching about open source and contributions

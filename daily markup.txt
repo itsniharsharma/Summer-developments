@@ -1,0 +1,53 @@
+Daily Markups
+
+I got a point, revision is the key, and nothing could be remembered by just writing
+It's not like JEE and all, I have to perform the tasks practically.
+The revision schedule must be 2H, It only has a complete revision of topics done yesterday.
+
+/--------------------
+6th June 2024
+
+- CSS Fonts, text floats
+- CSS flexbox- our element, padding, border, margin, making Web Responsive        Done
+- Getting a div in a div, mark display as flex, all inner div align in rows       Done                                                   
+- justify content: Center, etc then flex-wrap: wrap; //responsive website.        Done
+- Navigation bars and @media only screen and (min-width: px) and (max-width: px)     Done
+- From experience, draw borders of every element with RYB, etc and then adjust them   Done
+- Since I completed arrays/ArrayList and Linear Search, wise decision is to complete there questions! kunal Kushwaha
+
+/---------------------
+11th June 2024
+
+- Rebuilt Forms and practiced it
+- for tomorrow: complete JavaScript from Coincent.ai
+
+/--------------------
+12th June 2024
+
+-Do revise JavaScript concepts.
+-Finally complete JavaScript cource
+- Reference from codeWithHarry
+- Upload resume for GDSE
+
+/---------------------
+14th June 2024
+
+- Amazing, window.document.body.childNodes are linked as nodes, forming HTML  
+
+/--------------------
+15th June 2024
+
+- Learn about appendChild(); and removeChild();
+- Not comleted with listClass();
+
+/--------------------
+18th June 2024
+
+I want to enrich myself in the summer with a resume title like
+Java | JavaScript | MERN | Git & GitHub | CSS/Bootstrap | jQuery | Backend- PHP, SQL
+with a project in MERN, JS, etc.
+- what is caches?
+
+draw tree diagram for stone paper scissor as a dry diagram.
+
+/----------------------

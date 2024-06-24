@@ -1,0 +1,56 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    /* background-image: url(TIETcamp.jpg);
+    background-repeat: no-repeat;
+    background-size: 100%; */
+}
+
+.container{
+    max-width: 80%;
+    /* background-color: rgb(144, 214, 249); */
+    padding: 34px;
+    margin: auto;
+    /* background: linear-gradient(135deg, rgb(112, 220, 249), rgb(252, 255, 255)); */
+    /* border: 2px solid black; */
+    /* margin-top: 30px; */
+
+}
+
+.container h1,p{
+    text-align: center;
+}
+
+input, textarea{
+  width: 80%;
+  margin: 11px auto;
+  padding: 6px;
+  font-size: 20px;
+  display: block;
+  /* border: 5px solid rgb(144, 214, 249); */
+  border-radius: 23px;
+
+}
+
+form{
+    /* display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; */
+}
+
+.camp{
+    width: 100%;
+    position: absolute;
+    z-index: -1;
+    opacity: 0.3;
+}
+
+.submitMsg{
+    font-size: 25px;
+    color: rgb(44, 175, 44);
+}
